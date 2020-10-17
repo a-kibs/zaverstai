@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог Anne Sweet | Копирайтер</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header main-header"><span></span>
+        <nav class="main-navigation">
+            <a href="#" class="frontpage-link"><img class="main-header-logo" src="img/logo1.png"
+                    alt="Логотип блога Anne Sweet" width="130"></a>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#articles" class="nav-item-link">Статьи</a></li>
+                <li class="nav-item"><a href="#about-me" class="nav-item-link">Обо мне</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-item-link">Портфолио</a></li>
+                <li class="nav-item"><a href="#send-me" class="nav-item-link">Написать мне</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="title visually-hidden">Блог копирайтера Ани</h1>
+        <section class="articles" id="articles">
+            <h2 class="title title-h2 articles-header">Все статьи</h2>
+            <select class="article-theme-selector">
+                <option selected disabled hidden>Выбрать тему</option>
+                <option value="all">Все статьи</option>
+                <option value="city">Город</option>
+                <option value="books">Книги</option>
+                <option value="travel">Путешествия</option>
+                <option value="recipe">Рецепты</option>
+                <option value="photo">Фотографии</option>
+            </select>
+            <ul class="articles-list">
+                <li class="articles-item articles-item__small">
+                    <article class="article">
+                        <h3 class="title article-header"><a href="article.html">Путешествие в Берлин в августе</a></h3>
+                        <p class="article-description">Летний месяц я провела в столице Германии вместе с друзьями. И
+                            вот как это было!</p>
+                        <img class="article-picture" src="img/article-1.jpg" alt="Улицы Берлина" width="387"
+                            height="268">
+                        <footer class="article-footer">
+                            <p class="article-tags" data-tags="travel">Теги: путешествия</p>
+                            <time class="article-time" datetime="2020-09-29">29.09.2020</time>
+                        </footer>
+                    </article>
+                </li>
+                <li class="articles-item articles-item__small">
+                    <article class="article">
+                        <h3 class="title article-header"><a href="article.html">Где выпить колдбрю в Москве</a></h3>
+                        <p class="article-description">Собрала для вас список любимых кофеен,
+                            где подают лучший летний напиток.</p>
+                        <img class="article-picture" src="img/article-2.jpg" alt="Стакан с колдбрю" width="387"
+                            height="268">
+                        <footer class="article-footer">
+                            <p class="article-tags" data-tags="city">Теги: город</p>
+                            <time class="article-time" datetime="2020-07-24">24.07.2020</time>
+                        </footer>
+                    </article>
+                </li>
+                <li class="articles-item articles-item__small">
+                    <article class="article">
+                        <h3 class="title article-header"><a href="article.html">Прочитано: книжные рекомендации</a></h3>
+                        <p class="article-description">Рассказываю о прочитанных за последнее время книгах: фавориты и
+                            провалы.</p>
+                        <img class="article-picture" src="img/article-3.jpg" alt="Стопка книг с очками наверху"
+                            width="387" height="268">
+                        <footer class="article-footer">
+                            <p class="article-tags" data-tags="books">Теги: книги</p>
+                            <time class="article-time" datetime="2020-07-15">15.07.2020</time>
+                        </footer>
+                    </article>
+                </li>
+                <li class="articles-item articles-item__big font-color__white">
+                    <article class="article">
+                        <h3 class="title article-header article-header__big"><a href="article.html">Снимки на плёнку</a>
+                        </h3>
+                        <p class="article-description">Поделилась с вами весенними фотографиями,
+                            и секретами удачных снимков.</p>
+                        <img class="article-picture article-picture__big" src="img/article-4.jpg"
+                            alt="Весенний куст с розовыми цветами" width="590" height="552">
+                        <footer class="article-footer article-footer__big">
+                            <p class="article-tags" data-tags="photo">Теги: фотографии</p>
+                            <time class="article-time" datetime="2020-06-29">29.06.2020</time>
+                        </footer>
+                    </article>
+                </li>
+                <li class="articles-item articles-item__big font-color__white">
+                    <article class="article">
+                        <h3 class="title article-header article-header__big"><a href="article.html">Домашний чизкейк</a>
+                        </h3>
+                        <p class="article-description">Что может быть лучше чизкейка с сезонными
+                            ягодами? Только домашний чизкейк!</p>
+                        <img class="article-picture article-picture__big" src="img/article-5.jpg"
+                            alt="Кусочек чизкейка с ягодами" width="590" height="552">
+                        <footer class="article-footer article-footer__big">
+                            <p class="article-tags" data-tags="recipe">Теги: рецепты</p>
+                            <time class="article-time" datetime="2020-06-24">24.06.2020</time>
+                        </footer>
+                    </article>
+                </li>
+            </ul>
+            <button class="standart-button">Показать ещё</button>
+        </section>
+        <section class="about-me" id="about-me">
+            <h2 class="title title-h2 about-me-title">Обо мне</h2>
+            <div class="about-me-wrapper">
+                <p class="about-me-text">Всем привет! Меня зовут Аня, и это мой личный блог.<br>
+                    Здесь ты найдёшь рассказы о моих путешествиях, снимки на&nbsp;плёнку, рецепты, обзоры на книги. В
+                    общем,
+                    тексты о том, что&nbsp;мне интересно.</p>
+                <p class="about-me-text">Я работаю копирайтером, поэтому мой блог — это ещё и моё портфолио. Ниже
+                    размещены несколько моих лучших
+                    рабочих текстов. Буду рада новым сотрудничествам!</p>
+                <p class="about-me-text">Если вы хотите написать мне — это можно сделать в соцсетях или&nbsp;через <a
+                        class="to-form-link" href="#send-me">форму</a>. Всегда
+                    приятно услышать обратную связь от&nbsp;читателей и познакомиться поближе.</p>
+                <p class="about-me-text">Приятного чтения!</p>
+                <blockquote class="about-me-quote">
+                    Я верю, что каждый раз пробуя новое, выходящее за зону моего комфорта, я действительно узнаю
+                    настоящую
+                    себя.
+                </blockquote>
+            </div>
+            <img class="about-me-image" src="img/about-me.jpg" alt="Девушка, сидящая в шалаше на пляже" width="590"
+                height="693">
+        </section>
+        <section class="portfolio" id="portfolio">
+            <h2 class="title title-h2">Портфолио</h2>
+            <ul class="portfolio-list">
+                <li class="portfolio-item portfolio-item-1">
+                    <a href="">
+                        <h3 class="title portfolio-item-title">Блог HTML Academy <span
+                                class="portfolio-item-title-name">«Как учиться продуктивно»</span></h3>
+                        <p class="portfolio-item-description">Про основные методы обучения, которые&nbsp;помогут быстро
+                            и&nbsp;надолго
+                            запомнить&nbsp;информацию.</p>
+                    </a>
+                </li>
+                <li class="portfolio-item portfolio-item-2 font-color__white">
+                    <a href="">
+                        <h3 class="title portfolio-item-title">Журнал «LNK» <span
+                                class="portfolio-item-title-name">«Зачем поцелуи нужны человеку?
+                                И какие они бывают»</span></h3>
+                        <p class="portfolio-item-description">Поцелуи — повсеместная ежедневная практика.
+                            Но&nbsp;зачем&nbsp;люди
+                            целуются? Какие&nbsp;смыслы вкладывают в&nbsp;этот&nbsp;ритуал? И&nbsp;где&nbsp;корни
+                            этой&nbsp;практики?</p>
+                    </a>
+                </li>
+                <li class="portfolio-item portfolio-item-3">
+                    <a href="">
+                        <h3 class="title portfolio-item-title">Журнал «Т — Л» <span
+                                class="portfolio-item-title-name">«Советы по эффективной удалённой
+                                работе»</span></h3>
+                        <p class="portfolio-item-description">Поделилась лайфхаками, которые&nbsp;помогают мне работать
+                            продуктивно из&nbsp;дома. </p>
+                    </a>
+                </li>
+            </ul>
+            <button class="standart-button">Показать ещё</button>
+        </section>
+        <section class="send-me" id="send-me">
+            <h2 class="title title-h2 send-me-title">Написать мне</h2>
+            <form class="form send-form" method="post">
+                <label class="send-name-label" for="send-name">Ваше имя
+                    <input class="input input-text" type="text" name="name" id="send-name" placeholder="Иван Иванов"
+                        required>
+                </label>
+                <label class="send-email-label" for="send-email">Email
+                    <input class="input input-text" type="text" name="email" id="send-email"
+                        placeholder="google@gmail.com" required>
+                </label>
+                <label class="send-message-label" for="send-message">Сообщение
+                    <span class="error-message visually-hidden">Сообщение должно содержать от 10 до 200 символов</span>
+                    <textarea class="input input-text input-text__big" name="message" id="send-message" rows="13"
+                        placeholder="Напишите здесь ваше сообщение."></textarea>
+                </label>
+                <button class="standart-button send-button submit-button" type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <ul class="social-list">
+            <li class="social-item"><a href="">ВК</a></li>
+            <li class="social-item"><a href="">Телеграм</a></li>
+            <li class="social-item"><a href="">Инстаграм</a></li>
+            <li class="social-item"><a href="">Твиттер</a></li>
+        </ul>
+    </footer>
+    <script src="js/filter.js"></script>
+    <script src="js/validate.js"></script>
+</body>
+
+</html>
